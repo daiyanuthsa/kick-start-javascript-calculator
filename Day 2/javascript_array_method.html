@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Method</title>
+  </head>
+  <body>
+    <div>
+      <h2>Converting Array to String</h2>
+      <p>
+        Array bisa di konversi kedalam bentuk string dengan menggunakan method
+        <code>toString()</code>
+      </p>
+      <p><b>Example:</b><br /><code>var arr = [1, "B", "C"]</code></p>
+      <p><b>Syntax:</b><br /><code>(array).toString()</code></p>
+      <p><b>Result:</b><br /><span id="js_array_tostring_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript Array <code>pop()</code> and <code>push()</code></h2>
+      <h3>Array <code>pop()</code></h3>
+      <p>
+        Array <code>pop()</code> digunakan untuk menghapus element terakhir dari
+        sebuah array
+      </p>
+      <p><b>Example:</b><br /><code>var arr = ["A", "B", 123]</code></p>
+      <p><b>Syntax:</b><br /><code>arr.pop()</code></p>
+      <p><b>Result:</b><br /><span id="js_array_pop_result"></span></p>
+
+      <h3>Array <code>push()</code></h3>
+      <p>
+        Array <code>push()</code> digunakan untuk menambah element baru terakhir
+        dari sebuah array
+      </p>
+      <p><b>Example:</b><br /><code>var arr = ["A", "B", 123]</code></p>
+      <p><b>Syntax:</b><br /><code>arr.push("C")</code></p>
+      <p><b>Result:</b><br /><span id="js_array_push_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript Array <code>concat()</code> (Mergering)</h2>
+      <p>
+        <code>concat()</code> digunakan untuk menggabungkan 2 array ke dalam
+        array baru
+      </p>
+      <p>
+        <b>Example:</b><br /><code>var pria = ["Shandy", "Rizal", "Mirza"]</code
+        ><br /><code>var wanita = ["Putri", "Ziana", "Angel"]</code>
+      </p>
+      <p><b>Syntax:</b><br /><code>var kumpulan = pria.concat(wanita)</code></p>
+      <p><b>Result:</b><br /><span id="js_array_concat_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+        <h2>JavaScript Array delete</h2>
+        <p>
+            <code>delete</code> digunakan untuk menghapus array element dari index yg di definisikan
+        </p>
+        <p><b>Example:</b><br /><code>var arr = [1, "B", "C"]</code></p>
+        <p><b>Syntax:</b><br /><code>delete arr[0]</code></p>
+        <p><b>Result:</b><br /><span id="js_array_delete_result"></span></p>
+        <hr />
+      </div>
+
+    <a href="./javascript_array.html">Prev</a>
+    <a href="./javascript_array_sort.html">Next</a>
+
+    <script src="./helper.js"></script>
+
+    <script>
+      // JavaScript converting array into string
+      var arr = [1, "B", "C"];
+      helper.set("js_array_tostring_result", arr.toString());
+
+      // JavaScript array pop() and push()
+      var arr = ["A", "B", 123];
+      arr.pop();
+      helper.set("js_array_pop_result", arr);
+      var arr = ["A", "B", 123];
+      arr.push("C");
+      helper.set("js_array_push_result", arr);
+
+      // JavaScript concat()
+      var pria = ["Shandy", "Rizal", "Mirza"];
+      var wanita = ["Putri", "Ziana", "Angel"];
+      var kumpulan = pria.concat(wanita);
+      helper.set("js_array_concat_result", kumpulan);
+
+      // JavaScript delete
+      var arr = [1, "B", "C"];
+      delete arr[0]
+      helper.set("js_array_delete_result", arr)
+    </script>
+  </body>
+</html>

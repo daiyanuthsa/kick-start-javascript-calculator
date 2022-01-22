@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Iteration</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript Array <code>forEach()</code></h2>
+      <p>
+        <code>forEach()</code> mengoperasikan serta memanggil
+        <i>callback function</i> pada setiap elemen
+      </p>
+      <p>
+        <b>Example:</b><br />
+        <code>var txt = ""</code><br />
+        <code>var arr = [24, 38, 255, 48]</code>
+      </p>
+
+      <p>
+        <b>Callback function:</b><br />
+        <code>function addToTxt(value, index, array) { txt += value} </code>
+      </p>
+
+      <p>
+        <b>Result:</b><br />
+        <span id="js_array_foreach_result"></span>
+      </p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript Array <code>map()</code></h2>
+      <p>
+        Sedikit berbeda dari <code>forEach()</code>. <code>map()</code> membuat
+        array baru dengan melakukan iterasi dari setiap elemen array.
+        <code>map()</code> juga tidak mengganti sifat dari array sebelum nya
+      </p>
+
+      <p>
+        <b>Example:</b><br />
+        <code>var arr = [1, 2, 3, 4, 5]</code>
+      </p>
+
+      <p>
+        <b>Callback function:</b><br />
+        <code
+          >function multipleByTwo(value, index, array){ return value * 2 }</code
+        >
+      </p>
+      <p>
+        <b>Syntax:</b><br />
+        <code>var newArr = (array).map(multipleByTwo)</code>
+      </p>
+
+      <p>
+          <b>Result:</b><br>
+          <span id="js_array_map_result"></span>
+      </p>
+      <hr>
+    </div>
+    <a href="./javascript_array_sort.html">Prev</a>
+    <a href="./javascript_math.html">Next</a>
+    <script src="./helper.js"></script>
+
+    <script>
+      // JavaScript foreach()
+      var arr = [24, 38, 255, 48];
+      var txt = "";
+      function addToTxt(value, index, array) {
+        txt += value;
+      }
+
+      arr.forEach(addToTxt);
+
+      helper.set("js_array_foreach_result", txt);
+
+      // JavaScript map()
+      var arr = [1, 2, 3, 4, 5]
+      var newArr = arr.map(function(value, index, array){return value * 2})
+      helper.set("js_array_map_result", newArr)
+    </script>
+  </body>
+</html>

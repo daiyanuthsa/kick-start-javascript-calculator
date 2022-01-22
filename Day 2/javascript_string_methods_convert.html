@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript String Methods: Convert</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript <code>toUpperCase()</code></h2>
+      <p>
+        <code>toUpperCase()</code> method berfungsi untuk mengubah string
+        kedalam huruf kapital / besar
+      </p>
+      <p><b>Example:</b><br /><span id="js_str_upper_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).toUpperCase()</code></p>
+      <p><b>Result:</b><br /><span id="js_str_upper_result"></span></p>
+      <hr />
+    </div>
+    <div>
+      <h2>JavaScript <code>toLowerCase()</code></h2>
+      <p>
+        <code>toLowerCase()</code> method berfungsi untuk mengubah string
+        kedalam huruf kecil
+      </p>
+      <p><b>Example:</b><br /><span id="js_str_lower_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).toLowerCase()</code></p>
+      <p><b>Result:</b><br /><span id="js_str_lower_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript <code>concat()</code></h2>
+      <p>
+        <code>concat()</code> method berfungsi menggabungkan 2 string atau lebih
+        kedalam string baru
+      </p>
+      <p>
+        <b>Example:</b><br />text1 = <span id="js_str_concat_text1"></span
+        ><br />text2 = <span id="js_str_concat_text2"></span>
+      </p>
+      <p><b>Syntax:</b><br /><code>text1.concat(" ", text2)</code></p>
+      <p><b>Result:</b><br /><span id="js_str_concat_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript <code>trim()</code></h2>
+      <p>
+        <code>trim()</code> method berfungsi menghilangkan spasi pada awal
+        string dan akhir string
+      </p>
+      <p><b>Example:</b><br><span id="js_str_trim_example"></span></p>
+      <p><b>Syntax:</b><br><code>(string).trim()</code></p>
+      <p><b>Result:</b><br><span id="js_str_trim_result"></span></p>
+    </div>
+
+    <a href="./javascript_string_methods.html">Prev</a>
+    <a href="./javascript_string_search.html">Next</a>
+
+    <script src="./helper.js"></script>
+    <script>
+      // JavaScript String toUpperCase()
+      var example = "aku cinta javascript!";
+      var result = example.toUpperCase();
+      helper.set("js_str_upper_example", example);
+      helper.set("js_str_upper_result", result);
+
+      // JavaScript String toLowerCase()
+      var example = "AKU CINTA JAVASCRIPT!";
+      var result = example.toLowerCase();
+      helper.set("js_str_lower_example", example);
+      helper.set("js_str_lower_result", result);
+
+      // JavaScript String concat()
+      var text1 = "Aku Cinta Javascript!";
+      var text2 = "Iya bener banget";
+      var result = text1.concat(" ", text2);
+      helper.set("js_str_concat_text1", text1);
+      helper.set("js_str_concat_text2", text2);
+      helper.set("js_str_concat_result", result);
+
+      // JavaScript String trim()
+      var example = "    Aku Cinta Javascript    "
+      var result = example.trim()
+      helper.set("js_str_trim_example", example)
+      helper.set("js_str_trim_result", result)
+      console.log(result)
+    </script>
+  </body>
+</html>

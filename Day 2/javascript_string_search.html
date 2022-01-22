@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript String Search</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript String <code>indexOf()</code></h2>
+      <p>
+        <code>indexOf()</code> method berfungsi mengembalikan nilai index dari
+        posisi string pertama yang di ditemukan di dalam text
+      </p>
+      <p><b>Example:</b><br /><span id="js_indexof_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).indexOf("budi")</code></p>
+      <p><b>Result:</b><br /><span id="js_indexof_result"></span></p>
+
+      <p>
+        Perlu di ingat!, <code>indexOf()</code> hanya mengembalikan nilai index
+        pada string pertama yang ditemukan
+      </p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript <code>lastIndexOf()</code></h2>
+      <p>
+        <code>lastIndexOf()</code> method berfungsi mengembalikan nilai index
+        dari posisi string terakhir yang di temukan di dalam text
+      </p>
+      <p><b>Example:</b><br /><span id="js_lastindexof_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).lastIndexOf("budi")</code></p>
+      <p><b>Result:</b><br /><span id="js_lastindexof_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript <code>includes()</code></h2>
+      <p>
+        <code>includes()</code> method berfungsi untuk mengembalikan nilai
+        <i>true</i> jika string ditemukan di dalam text, sebaliknya bernilai
+        <i>false</i> jika tidak ditemukan
+      </p>
+
+      <p><b>Example:</b><br /><span id="js_includes_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).includes("budi")</code></p>
+      <p><b>Result:</b><br /><span id="js_includes_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript <code>startWith()</code></h2>
+      <p>
+        <code>startWith()</code> method berfungsi untuk mengembalikan nilai
+        <i>true</i> jika string yang berada di index pertama dalam sebuah text
+      </p>
+      <p><b>Example:</b><br /><span id="js_startWith_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).startWith("Aku")</code></p>
+      <p><b>Result:</b><br /><span id="js_startWith_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript <code>endWith()</code></h2>
+      <p>
+        <code>endWith()</code> method berfungsi untuk mengembalikan nilai
+        <i>true</i> jika string yang berada di index terakhir dalam sebuah text
+      </p>
+      <p><b>Example:</b><br /><span id="js_endWith_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).endWith("Irfan")</code></p>
+      <p><b>Result:</b><br /><span id="js_endWith_result"></span></p>
+    </div>
+    <a href="./javascript_string_methods.html">Prev</a>
+    <a href="./javascript_string_templates.html">Next</a>
+
+    <script src="./helper.js"></script>
+    <script>
+      // JavaScript indexOf()
+      var example = "Hari ini budi budi belajar JavaScript";
+      var result = example.indexOf("budi");
+      helper.set("js_indexof_example", example);
+      helper.set("js_indexof_result", result);
+
+      // JavaScript lastIndexOf()
+      var example = "HMS itu menyenangkan, HMS punya harisenin";
+      var result = example.lastIndexOf("HMS");
+      helper.set("js_lastindexof_example", example);
+      helper.set("js_lastindexof_result", result);
+
+      // JavaScript lastIndexOf()
+      var example = "Aku Cinta Javascript";
+      var result = example.includes("Adalah");
+      helper.set("js_includes_example", example);
+      helper.set("js_includes_result", result);
+
+      // JavaScript startWith()
+      var example = "Aku Cinta Javascript";
+      var result = example.startsWith("Cinta");
+      helper.set("js_startWith_example", example);
+      helper.set("js_startWith_result", result);
+
+      // JavaScript endWith()
+      var example = "Muhammad Irfan";
+      var result = example.endsWith("Muhammad");
+      helper.set("js_endWith_example", example);
+      helper.set("js_endWith_result", result);
+    </script>
+  </body>
+</html>

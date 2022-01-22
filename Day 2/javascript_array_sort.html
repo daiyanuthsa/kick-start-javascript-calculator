@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Sort</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript Array <code>sort()</code></h2>
+      <p>
+        <code>sort()</code> digunakan untuk mengurutkan array secara alphabet
+        mulai dari terkecil hingga terbesar
+      </p>
+      <p>
+        <b>Example:</b><br />
+        <code>var arr = ["Semangka", "Mangga", "Apel"]</code>
+      </p>
+
+      <p>
+        <b>Syntax:</b><br />
+        <code>var result = arr.sort()</code>
+      </p>
+
+      <p>
+        <b>Result:</b><br />
+        <span id="js_array_sort_result"></span>
+      </p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript Array <code>reverse()</code></h2>
+      <p>
+        <code>reverse()</code> kebalikan dari <code>sort()</code>.
+        <code>reverse()</code> digunakan untuk mengurutkan array secara alphabet
+        mulai dari terbesar hingga terkecil
+      </p>
+      <p>
+        <b>Example:</b><br />
+        <code>var arr = ["Semangka", "Mangga", "Apel"]</code>
+      </p>
+
+      <p>
+        <b>Syntax:</b><br />
+        <code>var result = arr.reverse()</code>
+      </p>
+
+      <p>
+        <b>Result:</b><br />
+        <span id="js_array_reverse_result"></span>
+      </p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript Array <code>sort()</code> Numeric</h2>
+      <p>
+        Ada sedikit trik jika elemen - elemen array adalah integer atau numeric
+        dengan menambahkan <i>function</i> di dalam parameter
+        <code>sort()</code>
+      </p>
+      <p>
+        <b>Example</b><br />
+        <code>var arr = [3, 1, 10, 5, 7, 12]</code>
+      </p>
+      <p>
+        <b>Syntax:</b><br />
+        <code>var result = arr.sort(function(a, b){return a - b})</code>
+      </p>
+      <p>
+        <b>Result:</b><br />
+        <span id="js_array_sort_numeric_result"></span>
+      </p>
+    </div>
+
+    <a href="./javascript_array_method.html">Prev</a>
+    <a href="./javascript_array_iteration.html">Next</a>
+
+    <script src="./helper.js"></script>
+    <script>
+      // JavaScript sort()
+      var arr = ["Semangka", "Mangga", "Apel"];
+      var result = arr.sort();
+      helper.set("js_array_sort_result", result);
+
+      // JavaScript reverse()
+      var result = arr.reverse();
+      helper.set("js_array_reverse_result", result);
+
+      // JavaScript sort() numeric
+      var arr = [3, 1, 10, 5, 7, 12];
+      var result = arr.sort(function (a, b) {
+        return a - b;
+      });
+
+      helper.set("js_array_sort_numeric_result", result)
+    </script>
+  </body>
+</html>

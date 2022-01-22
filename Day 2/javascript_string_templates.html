@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript String Templates</title>
+  </head>
+  <body>
+    <div>
+      <h2>Back-Tics Syntax</h2>
+      <p>
+        Template literals mendefinisikan sebuah string menggunakan Back-Tics
+        (``) syntax
+      </p>
+      <p>
+        <b>Example:</b><br />
+        <code>var txt = `Ini adalah string`</code>
+      </p>
+      <hr>
+    </div>
+
+    <div>
+      <h2>Quote inside String</h2>
+      <p>Bisa juga menggunakan gabungan dari Double Quote dan Single Quote</p>
+      <p>
+        <b>Example:</b><br /><code>var txt = `Ini adalah sebuah "string"`</code>
+      </p>
+      <hr>
+    </div>
+
+    <div>
+      <h2>Multiline Strings</h2>
+      <p>Template literals juga bisa membuat multi line string</p>
+      <p>
+        <b>Example:</b><br /><code>var txt =</code><br />
+        <code>`ini</code><br />
+        <code>adalah</code><br />
+        <code>string`</code>
+      </p>
+      <hr>
+    </div>
+
+    <div>
+      <h2>Interpolation</h2>
+      <p>
+        Template literals memudahkan juga dalam meng-interpolasi variable dan
+        expression
+      </p>
+      <p><b>Syntax:</b><br><code>${...}</code></p>
+      <hr>
+    </div>
+
+    <div>
+      <h2>Variable Subtitution</h2>
+      <p>Template literals bisa memanggil variable dengan Interpolation</p>
+      <p>
+        <b>Example:</b><br /><code>var firstName = "Muhammad"</code><br />
+        <code>var lastName = "Irfan"</code><br />
+        <code>var result = `Hi ${firstName} ${lastName}`</code>
+      </p>
+      <hr>
+    </div>
+
+    <div>
+      <h2>Expression Subtitution</h2>
+      <p>Template literals bisa memanggil expression dengan Interpolation</p>
+      <p>
+        <b>Example:</b><br /><code>var harga = 100</code><br />
+        <code>var diskon = 0.3</code><br />
+        <code>var result = `Total Diskon ${(harga * diskon).toFixed(2)}`</code>
+      </p>
+      <hr>
+    </div>
+    <a href="./javascript_string_search.html">Prev</a>
+    <a href="./javascript_array.html">Next</a>
+    <script src="./helper.js"></script>
+    <script></script>
+  </body>
+</html>

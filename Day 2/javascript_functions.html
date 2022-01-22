@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Functions</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript Functions</h2>
+      <p>Contoh untuk function untuk menghitung perkalian</p>
+      <p id="js_func"></p>
+      <hr />
+    </div>
+    <div>
+      <h2>JavaScript Functions as Variable</h2>
+      <p>Contoh untuk function sebagai value dari variable</p>
+      <p id="js_func_to_celcius"></p>
+      <hr />
+    </div>
+
+    <a href="./javascript_string_methods.html">Next</a>
+    <script src="./helper.js"></script>
+
+    <script>
+      // JavaScript Functions
+      function myFunction(p1, p2) {
+        return p1 * p2;
+      }
+
+      helper.set("js_func", myFunction(5, 2))
+
+      function dikali(v1, v2) {
+        return v1 * v2
+      }
+
+      // JavaScript Functions used as Variable Value
+      function toCelsius(fahrenheit) {
+        return (5 / 9) * (fahrenheit - 32);
+      }
+      var a = toCelsius(80)
+      helper.set("js_func_to_celcius", a)
+    </script>
+  </body>
+</html>

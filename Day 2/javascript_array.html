@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array</title>
+  </head>
+  <body>
+    <div>
+      <h2>Creating Array</h2>
+      <p>Ada 2 cara untuk mendefinisikan Array</p>
+      <p><b>Example 1:</b><br /><code>var arr = ["A", "B", "C"]</code></p>
+      <p>
+        <b>Example 2:</b><br /><code>var arr = []</code><br />
+        <code>arr[0] = "A"</code><br />
+        <code>arr[1] = "B"</code><br />
+        <code>arr[2] = "C"</code>
+      </p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>Creating Array using Keyword New</h2>
+      <p>Kemudian ada cara lain mendefinisikan array menggunakan keyword new</p>
+      <p>
+        <b>Example:</b><br /><code>var arr = new Array("A", "B", "C")</code>
+      </p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>Accessing Array Elements</h2>
+      <p>
+        Untuk mengakses Array Element, harus di definisikan index dari element
+        yg di minta
+      </p>
+      <p><b>Example:</b><br /><code>var arr = ["A", "B", "C"]</code></p>
+      <p><b>Syntax:</b><br /><code>var a = arr[0]</code></p>
+      <p><b>Result:</b><br /><span id="js_array_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>Changing Array Elements</h2>
+      <p>
+        Untuk mengakses Array Element, harus di definisikan index dari element
+        yg di minta
+      </p>
+      <p><b>Example:</b><br /><code>var arr = ["A", "B", "C"]</code></p>
+      <p><b>Syntax:</b><br /><code>arr[0] = "AZ"</code></p>
+      <p><b>Result:</b><br /><span id="js_array_c_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>Access Full Array</h2>
+      <p>Untuk mengakses full Array</p>
+      <p><b>Example:</b><br /><code>var arr = ["A", "B", "C"]</code></p>
+      <p><b>Result:</b><br /><span id="js_array_f_result"></span></p>
+      <hr />
+    </div>
+
+    <a href="./javascript_string_templates.html">Prev</a>
+    <a href="./javascript_array_method.html">Next</a>
+
+    <script src="./helper.js"></script>
+    <script>
+      // JavaScript Creating Array
+      var arr = ["A", "B", "C"];
+      var arr = [];
+      arr[0] = "A";
+      arr[1] = "B";
+      arr[2] = "C";
+
+      // JavaScript Creating Array using Keyword New
+      var arr = new Array("A", "B", "C");
+
+      // JavaScript Accessing Array Elements
+      var arr = ["A", "B", "C"];
+      var a = arr[0];
+      helper.set("js_array_result", a);
+
+      // JavaScript Changing Array Elements
+      var arr = ["A", "B", "C"];
+      arr[0] = "AZ";
+      helper.set("js_array_c_result", arr[0]);
+
+      // JavaScript Full Array
+      var arr = ["A", "B", "C"];
+      helper.set("js_array_f_result", arr);
+    </script>
+  </body>
+</html>

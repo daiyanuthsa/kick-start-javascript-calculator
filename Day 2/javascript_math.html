@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Math</title>
+  </head>
+  <body>
+    <div>
+      <h2>Math Property</h2>
+      <p>Terdapat banyak Math Property yang bisa digunakan</p>
+      <p>
+        <b>Property:</b><br />
+        <code>Math.E // returns Euler's number</code><br>
+        <code>Math.PI // returns PI</code><br>
+        <code>Math.SQRT2 // returns the square root of 2 </code><br>
+        <code>Math.SQRT1_2 // returns the square root of 1/2</code><br>
+        <code>Math.LN2 // returns the natural logarithm of 2</code><br>
+        <code>Math.LN10 // returns the natural logarithm of 10</code><br>
+        <code>Math.LOG2E // returns base 2 logarithm of E</code><br>
+        <code>Math.LOG10E // returns base 10 logarithm of E</code>
+      </p>
+
+      <p>
+          <b>Result:</b><br>
+          <code>Math.E = <span id="js_math_e"></span></code><br>
+          <code>Math.PI = <span id="js_math_pi"></span></code><br>
+          <code>Math.SQRT2 = <span id="js_math_sqrt2"></span></code><br>
+          <code>Math.SQRT1_2 = <span id="js_math_sqrt1_2"></span></code><br>
+          <code>Math.LN2 = <span id="js_math_ln2"></span></code><br>
+          <code>Math.LN10 = <span id="js_math_ln10"></span></code><br>
+          <code>Math.LOG2E = <span id="js_math_log2e"></span></code><br>
+          <code>Math.LOG10E = <span id="js_math_log10e"></span></code><br>
+      </p>
+
+      <p>
+          <b>Example:</b><br>
+          Diketahui diameter lingkaran adalah 8, berapakah luas lingkaran nya?
+      </p>
+
+      <p>
+          <b>Syntax:</b><br>
+          <code>var d = 8</code><br>
+          <code>var r = d / 2</code><br>
+          <code>var luasLingkaran = Math.PI * Math.pow(r, 2)</code>
+      </p>
+      <p>
+          <b>Result:</b><br>
+          <span id="js_math_luas_lingkaran"></span>
+      </p>
+      <hr>
+    </div>
+
+    <div>
+        <h2>Math <code>round()</code></h2>
+        <p>
+            <code>round() digunakan untuk menkonversi nilai decimal ke dalam integer terdekat</code>
+        </p>
+        <p>
+            <b>Example:</b><br>
+            <code>var a = 8.4</code><br>
+            <code>var b = 8.5</code><br>
+            <code>var c = 8.7</code><br>
+        </p>
+        <p>
+            <b>Result:</b><br>
+            <span id="js_math_round_a"></span><br>
+            <span id="js_math_round_b"></span><br>
+            <span id="js_math_round_c"></span><br>
+        </p>
+        <hr>
+    </div>
+
+    <div>
+        <h2>Math <code>ceil()</code></h2>
+        <p>
+            <code>ceil() digunakan untuk menkonversi nilai decimal ke dalam integer terdekat di round up integer tertinggi</code>
+        </p>
+        <p>
+            <b>Example:</b><br>
+            <code>var a = 8.4</code><br>
+            <code>var b = 8.5</code><br>
+            <code>var c = 8.7</code><br>
+        </p>
+        <p>
+            <b>Result:</b><br>
+            <span id="js_math_ceil_a"></span><br>
+            <span id="js_math_ceil_b"></span><br>
+            <span id="js_math_ceil_c"></span><br>
+        </p>
+        <hr>
+    </div>
+
+    <div>
+        <h2>Math <code>floor()</code></h2>
+        <p>
+            <code>floor() digunakan untuk menkonversi nilai decimal ke dalam integer terdekat di round down integer terendah</code>
+        </p>
+        <p>
+            <b>Example:</b><br>
+            <code>var a = 8.4</code><br>
+            <code>var b = 8.5</code><br>
+            <code>var c = 8.7</code><br>
+        </p>
+        <p>
+            <b>Result:</b><br>
+            <span id="js_math_floor_a"></span><br>
+            <span id="js_math_floor_b"></span><br>
+            <span id="js_math_floor_c"></span><br>
+        </p>
+        <hr>
+    </div>
+
+    <a href="./javascript_array_iteration.html">Prev</a>
+
+    <script src="./helper.js"></script>
+    <script>
+        // JavaScript Math Property
+        helper.set("js_math_e", Math.E)
+        helper.set("js_math_pi", Math.PI)
+        helper.set("js_math_sqrt2", Math.SQRT2)
+        helper.set("js_math_sqrt1_2", Math.SQRT1_2)
+        helper.set("js_math_ln2", Math.LN2)
+        helper.set("js_math_ln10", Math.LN10)
+        helper.set("js_math_log2e", Math.LOG2E)
+        helper.set("js_math_log10e", Math.LOG10E)
+
+        var d = 10
+        var r = d / 2
+        var luasLingkaran = Math.PI * Math.pow(r, 2)
+        helper.set("js_math_luas_lingkaran", luasLingkaran.toFixed(2))
+
+        // JavaScript Math round()
+        var a = 8.4
+        var b = 8.5
+        var c = 8.7
+        helper.set("js_math_round_a", Math.round(a))
+        helper.set("js_math_round_b", Math.round(b))
+        helper.set("js_math_round_c", Math.round(c))
+
+        // JavaScript Math ceil()
+        var a = 8.4
+        var b = 8.5
+        var c = 8.7
+        helper.set("js_math_ceil_a", Math.ceil(a))
+        helper.set("js_math_ceil_b", Math.ceil(b))
+        helper.set("js_math_ceil_c", Math.ceil(c))
+
+
+        // JavaScript Math floor()
+        var a = 8.4
+        var b = 8.5
+        var c = 8.7
+        helper.set("js_math_floor_a", Math.floor(a))
+        helper.set("js_math_floor_b", Math.floor(b))
+        helper.set("js_math_floor_c", Math.floor(c))
+    </script>
+  </body>
+</html>

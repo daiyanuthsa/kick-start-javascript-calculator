@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript String Methods</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript String Length</h2>
+      <p>
+        Properti <code>length</code> menghasilkan nilai dari panjang sebuah
+        string
+      </p>
+      <p><b>Example:</b><br /><span id="js_str_length_example"></span></p>
+      <p><b>Syntax</b>:<br /><code>(string).length</code></p>
+      <p><b>Result</b>: <br /><span id="js_str_length_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript String slice()</h2>
+      <p>
+        <code>slice()</code> method mengambil beberapa string dan mengembalikan
+        ke string baru. Method ini memiliki 2 parameter yaitu:
+        <b>start position</b> dan
+        <b>end position</b>
+      </p>
+      <p><b>Example:</b><br /><span id="js_str_slice_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).slice(12, 15)</code></p>
+      <p><b>Result:</b><br /><span id="js_str_slice_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript String substr()</h2>
+      <p>
+        <code>substr()</code> dan <code>slice()</code> hampir mirip. Cuma beda
+        di parameter kedua. parameter kedua berupa panjang string yang ingin di
+        ambil
+      </p>
+      <p><b>Example:</b><br /><span id="js_str_substr_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).substr(5, 5)</code></p>
+      <p><b>Result:</b><br /><span id="js_str_substr_result"></span></p>
+      <p>
+        Jika parameter kedua tidak diberi nilai alias <code>null</code> maka
+        <code>substr()</code> akan mengambil seluruh panjang string
+      </p>
+      <p>
+        <b>Example:</b><br /><span id="js_str_substr_without_example"></span>
+      </p>
+      <p><b>Syntax:</b><br /><code>(string).substr(5)</code></p>
+      <p><b>Result:</b><br /><span id="js_str_substr_without_result"></span></p>
+      <hr />
+    </div>
+
+    <div>
+      <h2>JavaScript String replace()</h2>
+      <p>
+        <code>replace()</code> berfungsi untuk mengganti string yang di
+        definisikan
+      </p>
+      <p><b>Example:</b><br /><span id="js_str_replace_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).replace("Benci", "Cinta")</code></p>
+      <p><b>Result:</b><br /><span id="js_str_replace_result"></span></p>
+
+      <p>
+        <code>replace()</code> method hanya mengganti string pada saat string
+        <b>pertama</b> ditemukan
+      </p>
+      <p>
+        <b>Example:</b><br /><span id="js_str_replace_first_example"></span>
+      </p>
+      <p><b>Syntax:</b><br /><code>(string).replace("Benci", "Cinta")</code></p>
+      <p><b>Result:</b><br /><span id="js_str_replace_first_result"></span></p>
+
+      <p>
+        <code>replace()</code> method juga bersifat
+        <i>Case Sensitive</i> artinya, setiap huruf besar dan kecil berpengaruh
+        pada pencarian
+      </p>
+      <p><b>Example:</b><br /><span id="js_str_replace_cs_example"></span></p>
+      <p><b>Syntax:</b><br /><code>(string).replace("Benci", "Cinta")</code></p>
+      <p><b>Result:</b><br /><span id="js_str_replace_cs_result"></span></p>
+      <hr />
+    </div>
+
+    <a href="./javascript_functions.html">Prev</a>
+    <a href="./javascript_string_methods_convert.html">Next</a>
+
+    <script src="./helper.js"></script>
+    <script>
+      // JavaScript String Length
+      // var example = "Aku Cinta Javascript!";
+      var example = "ini kelas hari-2"
+      var result = example.length;
+      helper.set("js_str_length_example", example);
+      helper.set("js_str_length_result", result);
+
+      // JavaScript String slice()
+      // var example = "Javascript, PHP, HTML";
+      var example = "Muhammad Irfan"
+      var result = example.slice(0, 4);
+      helper.set("js_str_slice_example", example);
+      helper.set("js_str_slice_result", result);
+
+      // JavaScript String substr()
+      var example = "Aku, Cinta, Javascript";
+      var result = example.substr(5, 5);
+      helper.set("js_str_substr_example", example);
+      helper.set("js_str_substr_result", result);
+
+      var result = example.substr(5);
+      helper.set("js_str_substr_without_example", example);
+      helper.set("js_str_substr_without_result", result);
+
+      // JavaScript String replace()
+      var example = "Aku Benci Javascript";
+      var result = example.replace("Benci", "Cinta");
+      helper.set("js_str_replace_example", example);
+      helper.set("js_str_replace_result", result);
+
+      var example = "Aku Benci Benci Javascript";
+      var result = example.replace("Benci", "Cinta");
+      helper.set("js_str_replace_first_example", example);
+      helper.set("js_str_replace_first_result", result);
+
+      var example = "Aku BENCI Javascript";
+      var result = example.replace("Benci", "Cinta");
+      helper.set("js_str_replace_cs_example", example)
+      helper.set("js_str_replace_cs_result", result)
+    </script>
+  </body>
+</html>
