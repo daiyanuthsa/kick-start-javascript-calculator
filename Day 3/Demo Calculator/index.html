@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="min-h-full flex items-center justify-center py12 px4 sm:px6 lg:px8">
+    <div class="columns">
+      <div class="flex flex-row-reverse pb-10">
+        <div class="flex-col-reverse">
+          <h3 id="old-value" class="text-righ font-bold text-5xl">0</h3>
+          <h1 id="new-value" class="text-righ font-bold text-7xl">0</h1>
+        </div>
+      </div>
+      <div class="grid gap-4 grid-cols-4">
+        <button class="rounded-3xl text-3xl bg-red-500 p-10 text-white col-span-3"> C </button>
+        <button class="rounded-3xl text-3xl bg-yellow-500 p-10 text-white">/</button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 7 </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 8 </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 9 </button>
+        <button class="rounded-3xl text-3xl bg-yellow-500 p-10 text-white"> X </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 4 </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 5 </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 6 </button>
+        <button class="rounded-3xl text-3xl bg-yellow-500 p-10 text-white">-</button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 1 </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 2 </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 3 </button>
+        <button class="rounded-3xl text-3xl bg-yellow-500 p-10 text-white"> + </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white"> 0 </button>
+        <button class="rounded-3xl text-3xl bg-blue-500 p-10 text-white col-span-2"> 00 </button>
+        <button class="rounded-3xl text-3xl bg-green-500 p-10 text-white"> = </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
